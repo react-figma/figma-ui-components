@@ -4,8 +4,10 @@ import { storiesOf } from "@storybook/react";
 import {Button} from "./Button";
 import {PrimaryButton} from "./PrimaryButton";
 import {TextStyleDecorator} from "../../storybook/TextStylesDecorator";
+import {boolean, withKnobs} from "@storybook/addon-knobs";
 
 storiesOf("Button", module)
     .addDecorator(TextStyleDecorator)
+    .addDecorator(withKnobs)
     .add("Button", () => <Button>Label</Button>)
-    .add("PrimaryButton", () => <PrimaryButton>Label</PrimaryButton>);
+    .add("PrimaryButton", () => <PrimaryButton disabled={boolean("disabled")}>Label</PrimaryButton>);
