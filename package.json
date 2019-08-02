@@ -1,6 +1,6 @@
 {
   "name": "figma-ui-components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Unofficial set of Figma UI components",
   "main": "./dist/index.js",
   "scripts": {
@@ -10,7 +10,8 @@
     "prettier": "prettier \"*/**/*.tsx\" \"*/**/*.ts\" --ignore-path ./.prettierignore --write && git add . && git status",
     "build": "npm run build:clean && npm run build:lib",
     "build:clean": "rimraf dist",
-    "build:lib": "cross-env BABEL_ENV=production tsc -p tsconfig.json --outDir dist"
+    "build:lib": "cross-env BABEL_ENV=production tsc -p tsconfig.json",
+    "prepublish": "npm run build"
   },
   "pre-commit": [
     "prettier"
