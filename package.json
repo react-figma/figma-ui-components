@@ -2,12 +2,17 @@
   "name": "figma-ui-components",
   "version": "0.0.0",
   "description": "Unofficial set of Figma UI components",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "flow": "flow",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status"
+    "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status",
+    "build": "npm run build:clean && npm run build:lib && npm run build:flow",
+    "build:clean": "rimraf dist",
+    "build:lib": "cross-env BABEL_ENV=production babel src --out-dir dist --ignore '**/__tests__/**'",
+    "build:flow": "gen-flow-files src --out-dir dist",
+    "prepublish": "npm run flow && npm run build"
   },
   "pre-commit": [
     "prettier"
@@ -15,6 +20,7 @@
   "author": "Ilya Lesik <ilialesik@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
     "@babel/core": "7.4.3",
     "@babel/preset-env": "7.4.3",
     "@babel/preset-flow": "^7.0.0",
@@ -24,10 +30,13 @@
     "@storybook/addon-knobs": "5.0.10",
     "@storybook/react": "5.0.10",
     "babel-loader": "8.0.5",
+    "cross-env": "^5.2.0",
     "flow-bin": "^0.101.1",
+    "gen-flow-files": "^0.4.6",
     "jest": "^24.8.0",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "rimraf": "^2.6.3"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
