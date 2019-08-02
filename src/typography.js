@@ -1,7 +1,7 @@
 // @flow
 import { createGlobalStyle } from "styled-components";
 
-export const TextStyles = createGlobalStyle`
+export const TypographyStyles = createGlobalStyle`
   /*  Typography */
     @font-face {
         font-family: 'Inter';

@@ -1,6 +1,6 @@
 {
   "name": "figma-ui-components",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "Unofficial set of Figma UI components",
   "main": "./dist/index.js",
   "scripts": {
