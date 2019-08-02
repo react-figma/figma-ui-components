@@ -1,6 +1,5 @@
-// @flow
+import * as React from "react";
 import { TypographyStyles } from "../typography";
-import React from "react";
 
 export const TextStyleDecorator = (story: () => any) => (
     <>

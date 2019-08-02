@@ -1,5 +1,3 @@
-// @flow
-import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
 import { figma_black_3, figma_red, figma_white } from "../../variables";

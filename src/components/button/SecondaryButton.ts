@@ -1,9 +1,7 @@
-// @flow
-import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
 import { figma_black_3, figma_black_8, figma_blue, figma_white } from "../../variables";
-import { fontUINeg, fontUIPos } from "../../mixins";
+import { fontUIPos } from "../../mixins";
 
 export const SecondaryButton = styled(Button)`
     color: ${figma_black_8};

@@ -1,23 +1,12 @@
-module.exports = {
-    plugins: [],
-    module: {
-        rules: [
+module.exports = ({ config }) => {
+    config.module.rules.push({
+        test: /\.(ts|tsx)$/,
+        use: [
             {
-                test: /\.(png|svg|jpg|gif|otf|ttf|eot|woff|woff2)$/,
-                use: [
-                    {
-                        loader: "file-loader"
-                    }
-                ]
-            },
-            {
-                test: /\.css$/,
-                use: ["style-loader", "css-loader"]
-            },
-            {
-                test: /\.js$/,
-                use: ["babel-loader"]
+                loader: require.resolve('ts-loader'),
             }
-        ]
-    }
+        ],
+    });
+    config.resolve.extensions.push('.ts', '.tsx');
+    return config;
 };

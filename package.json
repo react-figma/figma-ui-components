@@ -7,12 +7,10 @@
     "flow": "flow",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status",
-    "build": "npm run build:clean && npm run build:lib && npm run build:flow",
+    "prettier": "prettier \"*/**/*.tsx\" \"*/**/*.ts\" --ignore-path ./.prettierignore --write && git add . && git status",
+    "build": "npm run build:clean && npm run build:lib",
     "build:clean": "rimraf dist",
-    "build:lib": "cross-env BABEL_ENV=production babel src --out-dir dist --ignore '**/__storybook__/**','**/__tests__/**'",
-    "build:flow": "gen-flow-files src --out-dir dist",
-    "prepublish": "npm run flow && npm run build"
+    "build:lib": "cross-env BABEL_ENV=production tsc -p tsconfig.json --outDir dist"
   },
   "pre-commit": [
     "prettier"
@@ -29,6 +27,10 @@
     "@storybook/addon-info": "5.0.10",
     "@storybook/addon-knobs": "5.0.10",
     "@storybook/react": "5.0.10",
+    "@types/jest": "^24.0.16",
+    "@types/storybook__react": "^4.0.2",
+    "@types/styled-components": "^4.1.18",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "8.0.5",
     "cross-env": "^5.2.0",
     "flow-bin": "^0.101.1",
@@ -36,9 +38,14 @@
     "jest": "^24.8.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.17.0",
-    "rimraf": "^2.6.3"
+    "react-docgen-typescript-loader": "^3.1.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3"
   },
   "dependencies": {
+    "@types/storybook__addon-knobs": "^5.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
