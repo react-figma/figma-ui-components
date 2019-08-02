@@ -72,7 +72,7 @@ const Label = styled.label`
     ${fontUIPos("small", "normal")};
 `;
 
-export const checkboxComponents = {
+export const CheckboxComponents = {
     Root,
     Container,
     Box,
@@ -80,7 +80,7 @@ export const checkboxComponents = {
     Label
 };
 
-export const Checkbox = (props: { checked?: boolean; name?: string; onChange?: (value: boolean) => void }) => {
+export const Checkbox = (props: { checked?: boolean; name?: React.ReactNode; onChange?: (value: boolean) => void }) => {
     const { checked, name, onChange, ...otherProps } = props;
     return (
         <Root {...otherProps}>
