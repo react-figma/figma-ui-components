@@ -4,8 +4,33 @@
   "description": "Unofficial set of Figma UI components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "flow": "flow",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest",
+    "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status"
   },
   "author": "Ilya Lesik <ilialesik@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/preset-env": "7.4.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "7.0.0",
+    "@storybook/addon-actions": "5.0.10",
+    "@storybook/addon-info": "5.0.10",
+    "@storybook/addon-knobs": "5.0.10",
+    "@storybook/react": "5.0.10",
+    "babel-loader": "8.0.5",
+    "flow-bin": "^0.101.1",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-primitives": "^0.8.0",
+    "react-test-renderer": "^16.8.6",
+    "styled-components": "^4.3.2"
+  }
 }
