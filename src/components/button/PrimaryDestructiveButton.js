@@ -2,12 +2,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
-import { figma_black_3, figma_blue, figma_white } from "../../variables";
+import { figma_black_3, figma_red, figma_white } from "../../variables";
 import { fontUINeg } from "../../mixins";
 
-export const PrimaryButton = styled(Button)`
+export const PrimaryDestructiveButton = styled(Button)`
     color: ${figma_white};
-    background-color: ${figma_blue};
+    background-color: ${figma_red};
 
     ${fontUINeg("small", "medium")};
 
@@ -17,6 +17,6 @@ export const PrimaryButton = styled(Button)`
     }
 
     &:disabled {
-        background-color: ${figma_black_3};
+        opacity: 0.4;
     }
 `;

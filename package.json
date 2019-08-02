@@ -9,6 +9,9 @@
     "test": "jest",
     "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status"
   },
+  "pre-commit": [
+    "prettier"
+  ],
   "author": "Ilya Lesik <ilialesik@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -23,6 +26,7 @@
     "babel-loader": "8.0.5",
     "flow-bin": "^0.101.1",
     "jest": "^24.8.0",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.17.0"
   },
   "dependencies": {

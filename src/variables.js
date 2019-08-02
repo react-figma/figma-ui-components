@@ -31,7 +31,6 @@ export const figma_selection_a = "#daebf7";
 export const figma_selection_b = "#edf5fa"; //edf5fa
 export const figma_white_2 = "rgba(255, 255, 255, 0.2)"; // Use for menu dividers
 
-
 // TYPOGRAPHY //////////
 // pos  = "positive applications, white on black bg, neg  = "inverse
 
@@ -63,7 +62,6 @@ export const font_letterspacing_neg_large = "0.0025em";
 export const font_letterspacing_pos_xlarge = "_0.001em";
 export const font_letterspacing_neg_xlarge = "_0.001em";
 
-
 // BORDER RADIUS //////////
 
 export const border_radius_extra_small = "1px";
@@ -71,14 +69,12 @@ export const border_radius_small = "2px";
 export const border_radius_med = "5px";
 export const border_radius_large = "6px";
 
-
 // SPACING + SIZING //////////
 export const xsmall = "4px";
 export const small = "8px";
 export const medium = "16px";
 export const large = "24px";
 export const xlarge = "32px";
-
 
 //SHADOWS //////////
 

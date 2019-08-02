@@ -1,5 +1,5 @@
 // @flow
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const TextStyles = createGlobalStyle`
   /*  Typography */
