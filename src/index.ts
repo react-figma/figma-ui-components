@@ -13,6 +13,7 @@ export { Divider } from "./components/divider/Divider";
 export * from "./components/icon/Icon";
 
 export { Input } from "./components/input/Input";
+export { InputWithIconComponents, InputWithIcon } from "./components/input/InputWithIcon";
 
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
