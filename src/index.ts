@@ -19,6 +19,8 @@ export { Label } from "./components/label/Label";
 
 export { OnboardingTipComponents, OnboardingTip } from "./components/onboarding-tip/OnboardingTip";
 
+export { SectionTitle } from "./components/section-title/SectionTitle";
+
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
 
