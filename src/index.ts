@@ -16,3 +16,5 @@ export { Input } from "./components/input/Input";
 
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
+
+export * from "./variables";
