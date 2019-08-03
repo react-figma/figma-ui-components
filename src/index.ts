@@ -17,6 +17,8 @@ export { InputWithIconComponents, InputWithIcon } from "./components/input/Input
 
 export { Label } from "./components/label/Label";
 
+export { OnboardingTipComponents, OnboardingTip } from "./components/onboarding-tip/OnboardingTip";
+
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
 
