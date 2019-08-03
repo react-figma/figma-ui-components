@@ -10,5 +10,7 @@ export { DisclosureItem, DisclosureItemComponents } from "./components/disclosur
 
 export { Divider } from "./components/divider/Divider";
 
+export * from "./components/icon/Icon";
+
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
