@@ -15,6 +15,8 @@ export * from "./components/icon/Icon";
 export { Input } from "./components/input/Input";
 export { InputWithIconComponents, InputWithIcon } from "./components/input/InputWithIcon";
 
+export { Label } from "./components/label/Label";
+
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
 
