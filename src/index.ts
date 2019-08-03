@@ -12,5 +12,7 @@ export { Divider } from "./components/divider/Divider";
 
 export * from "./components/icon/Icon";
 
+export { Input } from "./components/input/Input";
+
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
