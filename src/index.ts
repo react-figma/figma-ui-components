@@ -21,6 +21,10 @@ export { OnboardingTipComponents, OnboardingTip } from "./components/onboarding-
 
 export { SectionTitle } from "./components/section-title/SectionTitle";
 
+export { SelectMenuComponents, SelectMenu } from "./components/select-menu/SelectMenu";
+export { SelectMenuItemComponents, SelectMenuItem } from "./components/select-menu/SelectMenuItem";
+export { SelectMenuDivider } from "./components/select-menu/Divider";
+
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
 
