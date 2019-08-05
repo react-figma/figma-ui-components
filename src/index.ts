@@ -27,6 +27,8 @@ export { SelectMenuDivider } from "./components/select-menu/Divider";
 
 export { Switch, SwitchComponents } from "./components/switch/Switch";
 
+export { Textarea } from "./components/textarea/Textarea";
+
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
 
