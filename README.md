@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/figma-ui-components.svg)](https://www.npmjs.com/package/figma-ui-components)
 
-An unofficial set of Figma UI components. 
+An unofficial set of Figma UI components for creating plugins and other purposes. 
 Based on [Tom Lowry's Figma UI JS/CSS files](https://www.dropbox.com/s/iar45s6h22nupom/figma-plugin-ui-css-0.5.zip?dl=0).
 
 * Uses React ⚛️, styled-components 💅, TypeScript.
