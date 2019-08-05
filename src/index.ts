@@ -25,6 +25,8 @@ export { SelectMenuComponents, SelectMenu } from "./components/select-menu/Selec
 export { SelectMenuItemComponents, SelectMenuItem } from "./components/select-menu/SelectMenuItem";
 export { SelectMenuDivider } from "./components/select-menu/Divider";
 
+export { Switch, SwitchComponents } from "./components/switch/Switch";
+
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
 
