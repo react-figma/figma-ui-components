@@ -1,6 +1,6 @@
 {
   "name": "figma-ui-components",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Unofficial set of Figma UI components",
   "main": "./dist/index.js",
   "scripts": {
@@ -18,6 +18,15 @@
   },
   "pre-commit": [
     "prettier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lessmess-dev/figma-ui-components.git"
+  },
+  "keywords": [
+    "figma",
+    "react",
+    "ui-kit"
   ],
   "author": "Ilya Lesik <ilialesik@gmail.com>",
   "license": "MIT",
