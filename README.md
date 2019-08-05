@@ -47,10 +47,10 @@ import * as React from 'react'
 import {PrimaryButton, SecondaryButton} from "figma-ui-components"
 
 export const Component = () => {
-    return <div>
-        <PrimaryButton onClick={onCreate}>Create</PrimaryButton>
-        <SecondaryButton onClick={onCancel}>Cancel</SecondaryButton>
-    </div>
+    return <>
+        <PrimaryButton onClick={...}>Create</PrimaryButton>
+        <SecondaryButton onClick={...}>Cancel</SecondaryButton>
+    </>
 };
 ```
 
