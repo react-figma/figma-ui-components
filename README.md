@@ -40,7 +40,7 @@ const App = () => {
 };
 ```
 
-## Components
+### Components
 
 ```javascript
 import * as React from 'react'
