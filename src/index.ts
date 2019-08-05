@@ -29,6 +29,8 @@ export { Switch, SwitchComponents } from "./components/switch/Switch";
 
 export { Textarea } from "./components/textarea/Textarea";
 
+export * from "./components/type/Type";
+
 export { TypographyStyles } from "./typography";
 export { BaseStyles } from "./base";
 
