@@ -6,12 +6,15 @@
   "scripts": {
     "flow": "flow",
     "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -c .storybook -o .out",
     "test": "jest",
     "prettier": "prettier \"*/**/*.tsx\" \"*/**/*.ts\" --ignore-path ./.prettierignore --write && git add . && git status",
     "build": "npm run build:clean && npm run build:lib",
     "build:clean": "rimraf dist",
     "build:lib": "cross-env BABEL_ENV=production tsc -p tsconfig.json",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "now-build": "npm run build-storybook",
+    "deploy": "now"
   },
   "pre-commit": [
     "prettier"
