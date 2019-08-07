@@ -7,7 +7,7 @@ Based on [Tom Lowry's Figma UI JS/CSS files](https://www.dropbox.com/s/iar45s6h2
 
 * Uses React ⚛️, styled-components 💅, TypeScript.
 * Stateful components, fully controlled outside.
-* All components showed at [Storybook](https://figma-ui.lessmess.agency/).
+* All components showed at [Storybook](https://figma-ui.lessmess.dev/).
 
 ## Installation
 
