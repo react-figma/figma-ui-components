@@ -4,7 +4,7 @@
   "description": "Unofficial set of Figma UI components",
   "main": "./dist/index.js",
   "scripts": {
-    "flow": "flow",
+    "tsc": "tsc -p tsconfig.json",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "test": "jest",
@@ -58,7 +58,6 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
-    "@types/storybook__addon-knobs": "^5.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
